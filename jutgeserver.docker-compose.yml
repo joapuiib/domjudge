@@ -1,15 +1,5 @@
-version: "3"
+version: "3.9"
 services:
-  db:
-    image: mariadb
-    env_file:
-      jutgeserver.env
-    ports:
-      - 13306:3306
-    command: --max-connections=500 --max-allowed-packet=512M
-    volumes:
-      - /var/lib/mysql
-
   jutgeserver:
     image: domjudge/domserver:latest
     hostname: jutgeserver
@@ -20,6 +10,19 @@ services:
       - .:/domjudge:cached
     links:
       - db:mariadb
+    depends_on:
+      - db
     ports: 
-      - 12345:80
+      - 80:80
+    restart: on-failure
     privileged: true
+
+  db:
+    image: mariadb
+    env_file:
+      jutgeserver.env
+    ports:
+      - 13306:3306
+    command: --max-connections=500 --max-allowed-packet=512M
+    volumes:
+      - /var/lib/mysql
