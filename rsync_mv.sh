@@ -26,3 +26,4 @@ fi
 
 mkdir -p /dades/dades/jpuig
 CMD_REAL="rsync -avHCR ${USUARI}@${ORIGEN}:vm/JutgeHost /dades/dades/jpuig"
+$CMD_REAL
