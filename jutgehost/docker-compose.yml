@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  jutgehost:
+    image: domjudge/judgehost:latest
+    hostname: judgehost0
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    environment:
+      - CONTAINER_TIMEZONE=Europe/Madrid
+      - DOMSERVER_BASEURL=http://171.21.1.50/
+      - JUDGEDAEMON_USERNAME=judgehost
+      - JUDGEDAEMON_PASSWORD=host1234
+      - DOMJUDGE_CREATE_WRITABLE_TEMP_DIR=1
+    privileged: true
