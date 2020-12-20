@@ -1,0 +1,50 @@
+name:                     Zombies al Itb
+short-name:               practice-test
+start-time:               2020-12-20T10:00:00+01:00
+duration:                 12:00:00
+scoreboard-freeze-length: 0:30:00
+penalty-time:             20
+problems:
+  - letter:     A
+    short-name: 00_ZombiesAlITB
+    rgb:        '#FF7109'
+
+  - letter:     B
+    short-name: 01_TimeTillDawn
+    rgb:        '#008100'
+
+  - letter:     C
+    short-name: 02_CountTheZombies
+    rgb:        '#FF5733'
+
+  - letter:     D
+    short-name: 03_ExitWhenYouCan
+    rgb:        '#FFC300'
+
+  - letter:     E
+    short-name: 04_FastOrSlowZombies
+    rgb:        '#FF3382'
+
+  - letter:     F
+    short-name: 05_FindTheZombie
+    rgb:        '#3342FF'
+
+  - letter:     G
+    short-name: 06_ZombieCacher
+    rgb:        '#33FF39'
+
+  - letter:     H
+    short-name: 07_StudyTheZombie
+    rgb:        '#FF33F6'
+
+  - letter:     I
+    short-name: 08_KillAsManyZombies
+    rgb:        '#33FCFF'
+
+  - letter:     J
+    short-name: 09_ScapeIfYouCan
+    rgb:        '#9F33FF'
+
+  - letter:     K
+    short-name: 10_ScapeIfYouCanHard
+    rgb:        '#581845'
